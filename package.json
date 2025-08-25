@@ -10,7 +10,8 @@
     "prisma-push": "pnpm dlx prisma db push",
     "prisma-studio": "pnpm dlx prisma studio",
     "prisma-generate": "pnpm prisma generate",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@kinde-oss/kinde-auth-nextjs": "^2.8.6",
