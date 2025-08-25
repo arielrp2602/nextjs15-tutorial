@@ -35,6 +35,9 @@ importers:
       pnpm:
         specifier: ^10.15.0
         version: 10.15.0
+      prisma:
+        specifier: ^6.14.0
+        version: 6.14.0(typescript@5.9.2)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -2366,13 +2369,10 @@ snapshots:
       empathic: 2.0.0
     transitivePeerDependencies:
       - magicast
-    optional: true
 
-  '@prisma/debug@6.14.0':
-    optional: true
+  '@prisma/debug@6.14.0': {}
 
-  '@prisma/engines-version@6.14.0-25.717184b7b35ea05dfa71a3236b7af656013e1e49':
-    optional: true
+  '@prisma/engines-version@6.14.0-25.717184b7b35ea05dfa71a3236b7af656013e1e49': {}
 
   '@prisma/engines@6.14.0':
     dependencies:
@@ -2380,19 +2380,16 @@ snapshots:
       '@prisma/engines-version': 6.14.0-25.717184b7b35ea05dfa71a3236b7af656013e1e49
       '@prisma/fetch-engine': 6.14.0
       '@prisma/get-platform': 6.14.0
-    optional: true
 
   '@prisma/fetch-engine@6.14.0':
     dependencies:
       '@prisma/debug': 6.14.0
       '@prisma/engines-version': 6.14.0-25.717184b7b35ea05dfa71a3236b7af656013e1e49
       '@prisma/get-platform': 6.14.0
-    optional: true
 
   '@prisma/get-platform@6.14.0':
     dependencies:
       '@prisma/debug': 6.14.0
-    optional: true
 
   '@radix-ui/react-compose-refs@1.1.2(@types/react@19.1.11)(react@19.1.0)':
     dependencies:
@@ -2429,8 +2426,7 @@ snapshots:
 
   '@rushstack/eslint-patch@1.12.0': {}
 
-  '@standard-schema/spec@1.0.0':
-    optional: true
+  '@standard-schema/spec@1.0.0': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -2812,7 +2808,6 @@ snapshots:
       perfect-debounce: 1.0.0
       pkg-types: 2.3.0
       rc9: 2.1.2
-    optional: true
 
   call-bind-apply-helpers@1.0.2:
     dependencies:
@@ -2843,14 +2838,12 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
-    optional: true
 
   chownr@3.0.0: {}
 
   citty@0.1.6:
     dependencies:
       consola: 3.4.2
-    optional: true
 
   class-variance-authority@0.7.1:
     dependencies:
@@ -2880,11 +2873,9 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  confbox@0.2.2:
-    optional: true
+  confbox@0.2.2: {}
 
-  consola@3.4.2:
-    optional: true
+  consola@3.4.2: {}
 
   cookie@1.0.2: {}
 
@@ -2928,8 +2919,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  deepmerge-ts@7.1.5:
-    optional: true
+  deepmerge-ts@7.1.5: {}
 
   define-data-property@1.1.4:
     dependencies:
@@ -2943,8 +2933,7 @@ snapshots:
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
 
-  defu@6.1.4:
-    optional: true
+  defu@6.1.4: {}
 
   destr@2.0.5: {}
 
@@ -2954,8 +2943,7 @@ snapshots:
     dependencies:
       esutils: 2.0.3
 
-  dotenv@16.6.1:
-    optional: true
+  dotenv@16.6.1: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -2967,12 +2955,10 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.0.0
       fast-check: 3.23.2
-    optional: true
 
   emoji-regex@9.2.2: {}
 
-  empathic@2.0.0:
-    optional: true
+  empathic@2.0.0: {}
 
   enhanced-resolve@5.18.3:
     dependencies:
@@ -3279,13 +3265,11 @@ snapshots:
 
   esutils@2.0.3: {}
 
-  exsolve@1.0.7:
-    optional: true
+  exsolve@1.0.7: {}
 
   fast-check@3.23.2:
     dependencies:
       pure-rand: 6.1.0
-    optional: true
 
   fast-deep-equal@3.1.3: {}
 
@@ -3390,7 +3374,6 @@ snapshots:
       node-fetch-native: 1.6.7
       nypm: 0.6.1
       pathe: 2.0.3
-    optional: true
 
   glob-parent@5.1.2:
     dependencies:
@@ -3742,8 +3725,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  node-fetch-native@1.6.7:
-    optional: true
+  node-fetch-native@1.6.7: {}
 
   nypm@0.6.1:
     dependencies:
@@ -3752,7 +3734,6 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 2.3.0
       tinyexec: 1.0.1
-    optional: true
 
   object-assign@4.1.1: {}
 
@@ -3796,8 +3777,7 @@ snapshots:
       define-properties: 1.2.1
       es-object-atoms: 1.1.1
 
-  ohash@2.0.11:
-    optional: true
+  ohash@2.0.11: {}
 
   optionator@0.9.4:
     dependencies:
@@ -3832,11 +3812,9 @@ snapshots:
 
   path-parse@1.0.7: {}
 
-  pathe@2.0.3:
-    optional: true
+  pathe@2.0.3: {}
 
-  perfect-debounce@1.0.0:
-    optional: true
+  perfect-debounce@1.0.0: {}
 
   picocolors@1.1.1: {}
 
@@ -3849,7 +3827,6 @@ snapshots:
       confbox: 0.2.2
       exsolve: 1.0.7
       pathe: 2.0.3
-    optional: true
 
   pnpm@10.15.0: {}
 
@@ -3877,7 +3854,6 @@ snapshots:
       typescript: 5.9.2
     transitivePeerDependencies:
       - magicast
-    optional: true
 
   prop-types@15.8.1:
     dependencies:
@@ -3887,8 +3863,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  pure-rand@6.1.0:
-    optional: true
+  pure-rand@6.1.0: {}
 
   queue-microtask@1.2.3: {}
 
@@ -3896,7 +3871,6 @@ snapshots:
     dependencies:
       defu: 6.1.4
       destr: 2.0.5
-    optional: true
 
   react-dom@19.1.0(react@19.1.0):
     dependencies:
@@ -3907,8 +3881,7 @@ snapshots:
 
   react@19.1.0: {}
 
-  readdirp@4.1.2:
-    optional: true
+  readdirp@4.1.2: {}
 
   reflect.getprototypeof@1.0.10:
     dependencies:
@@ -4157,8 +4130,7 @@ snapshots:
       mkdirp: 3.0.1
       yallist: 5.0.0
 
-  tinyexec@1.0.1:
-    optional: true
+  tinyexec@1.0.1: {}
 
   tinyglobby@0.2.14:
     dependencies:
