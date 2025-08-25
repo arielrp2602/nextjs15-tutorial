@@ -3,7 +3,7 @@ import { prisma } from './utils/db';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
-async function getData() {
+async function getData(): Promise<BlogPost[]> {
   await new Promise((r) => setTimeout(r, 1000));
   const data = await prisma.blogPost.findMany({
     select: {
@@ -37,7 +37,7 @@ async function BlogPosts() {
   const data = await getData();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {data.map((item: unknown) => (
+      {data.map((item: BlogPost) => (
         <BlogPostCard key={item.id} {...item} />
       ))}
     </div>
