@@ -1,3 +1,4 @@
+import { formatDateTime } from '@/app/utils';
 import { prisma } from '@/app/utils/db';
 import { Routes } from '@/common/enums';
 import { buttonVariants } from '@/components/ui/button';
@@ -54,11 +55,7 @@ export default async function IdPage({ params }: Props) {
             <p className="font-medium">{data.authorName}</p>
           </div>
           <p className="text-sm text-gray-500">
-            {new Intl.DateTimeFormat('en-us', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            }).format(data.createdAt)}
+            {formatDateTime(data.createdAt)}
           </p>
         </div>
       </div>

@@ -13,6 +13,7 @@ export async function handleSubmission(formData: FormData) {
 
   checkUser(user);
 
+  // Esto es el equivalente a un insert into BlogPosts (...)
   await prisma.blogPost.create({
     data: {
       title: formData.get('title') as string,
@@ -24,6 +25,10 @@ export async function handleSubmission(formData: FormData) {
     },
   });
 
+  // Esto es para que se actualice la página principal después de crear un nuevo post
+  // sin necesidad de que el usuario tenga que refrescar manualmente
+  // Internamente limpia la caché de la ruta indicada
+  // y Next.js vuelve a generar la página con los nuevos datos
   revalidatePath(Routes.HOME);
 
   return redirect(Routes.DASHBOARD);

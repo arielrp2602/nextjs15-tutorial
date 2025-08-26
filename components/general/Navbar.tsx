@@ -9,6 +9,7 @@ import {
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs';
 
 export function Navbar() {
+  // Para obtener el usuario autenticado en el cliente, el componente debe ser Client
   const { getUser } = useKindeBrowserClient();
   const user = getUser();
 

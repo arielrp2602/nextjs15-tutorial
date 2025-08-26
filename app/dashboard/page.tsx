@@ -10,6 +10,7 @@ type getDataParams = {
 
 async function getData(params: getDataParams) {
   await new Promise((r) => setTimeout(r, 1000));
+  // Esto es el equivalente a hacer un select * from BlogPosts where authorId = '...'
   const data = await prisma.blogPost.findMany({
     where: {
       ...params,

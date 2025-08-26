@@ -22,6 +22,10 @@ export default function CreateBlogRoute() {
           </CardDescription>
         </CardHeader>
         <CardContent>
+          {
+            // Los valores del formulario se envían a la función handleSubmission en app/actions.tsx
+            // Se pueden identificar los campos por el atributo name
+          }
           <form className="flex flex-col gap-4" action={handleSubmission}>
             <div className="flex flex-col gap-2">
               <Label>Title</Label>

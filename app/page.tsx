@@ -7,6 +7,7 @@ export const revalidate = 60;
 
 async function getData(): Promise<BlogPost[]> {
   await new Promise((r) => setTimeout(r, 1000));
+  // Si no se pone el select, Prisma trae todos los campos de la tabla
   const data = await prisma.blogPost.findMany({
     select: {
       id: true,
