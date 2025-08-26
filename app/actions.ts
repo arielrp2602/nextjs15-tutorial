@@ -5,6 +5,7 @@ import { prisma } from './utils/db';
 import { redirect } from 'next/navigation';
 import { Routes } from '@/common/enums';
 import { checkUser } from './utils';
+import { revalidatePath } from 'next/cache';
 
 export async function handleSubmission(formData: FormData) {
   const { getUser } = getKindeServerSession();
@@ -22,6 +23,8 @@ export async function handleSubmission(formData: FormData) {
       authorName: user?.given_name as string,
     },
   });
+
+  revalidatePath(Routes.HOME);
 
   return redirect(Routes.DASHBOARD);
 }
